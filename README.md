@@ -1,4 +1,4 @@
-# RAG Knowledge Base
+# Demo: RAG Knowledge Base
 
 ## Getting Started
 
@@ -17,27 +17,32 @@ pip install singlestoredb langchain langchain-community langchain-openai openai 
 
 3. Create a `.env` file in the root of the project based on the `.env.example` file.
 4. Place a PDF, Markdown, or TXT file that you want to use as your knowledge base into the directory you just created.
-
-## Create Tabels
-
-Execute the following command in your terminal to create tables:
+5. Create tables by running the following command:
 
 ```sh
 python ./create_tables.py
 ```
 
-## Create Embeddings
-
-Execute the following command in your terminal to create embeddings:
+6. Create embeddings by running the following command:
 
 ```sh
 python ./create_embeddings.py
 ```
 
-## Load Embeddings
-
-Execute the following command in your terminal to load embeddings:
+7. Load embeddings by running the following command:
 
 ```sh
 python ./load_embeddings.py
 ```
+
+8. Run the app:
+
+```sh
+python ./app.py
+```
+
+9. Open http://localhost:8000/docs in your browser and test the `/ask` API endpoint.
+
+---
+
+[Start With SingleStore – $600 in Free Credits](https://portal.singlestore.com/intention/cloud?utm_source=yaroslav&utm_medium=github&utm_campaign=ai&utm_content=how-to-build-a-retrieval-augmented-knowledge-base-in-python-for-customer-support)
